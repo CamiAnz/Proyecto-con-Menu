@@ -30,7 +30,7 @@ SubProceso jugar (juego Por Referencia)
 	Escribir ".*¨*.¸¸.*¨*.¸¸.*¨*.¸¸.*¨*.¸¸.*¨*.¸¸.*¨*.¸¸.*¨*.¸¸.*¨*.¸¸.*¨* ";
 	
 	para i <- 0 hasta 9 con paso 1 Hacer //RECORREMOS EL ARRAY COMPLETANDOLO CON ESPACIOS EN BLANCO
-		vector(i) <- " ";
+    vector(i) <- " ";
 	FinPara
 	
 	jugador <- azar(2) + 1; //DESIGNA DE MANERA ALEATORIA CUAL VA A SER EL PRIMER JUGADOR EN JUGAR, SE COLOCA UN 1 PARA QUE EL MISMO NO SEA 0
@@ -1038,11 +1038,37 @@ FinSubProceso
 
 
 Proceso GuerraDeLasGalaxias
-	definir tecla1 Como Entero;;
-	Escribir "*******************************************";
-	Escribir "**BIENVENIDOS AL POOL DE JUEGOS DE LA UTN**";
-	Escribir "*******************************************";
-	Escribir "SELECCIONE EL JUEGO QUE DESEE JUGAR";
+	definir tecla1 Como Entero;
+	
+	Escribir "          #####                                 #######                               #######                                ###   ";
+	Escribir "         #     # #####  #    # #####   ####     #         ##   #####   ##   #         #       #####  #####   ####  #####     ###   ";
+	Escribir "         #       #    # #    # #    # #    #    #        #  #    #    #  #  #         #       #    # #    # #    # #    #    ###   ";
+	Escribir "         #  #### #    # #    # #    # #    #    #####   #    #   #   #    # #         #####   #    # #    # #    # #    #     #    ";
+	Escribir "         #     # #####  #    # #####  #    #    #       ######   #   ###### #         #       #####  #####  #    # #####           ";
+	Escribir "         #     # #   #  #    # #      #    #    #       #    #   #   #    # #         #       #   #  #   #  #    # #   #     ###   ";
+	Escribir "          #####  #    #  ####  #       ####     #       #    #   #   #    # ######    ####### #    # #    #  ####  #    #    ###   ";
+
+
+	Escribir "  ";
+	Escribir "  ";
+	Escribir "  ";
+	Escribir "    X+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+X";
+	Escribir "    X+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+X+X  BIENVENIDOS AL POOL DE JUEGOS X+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+X+X";
+	Escribir "    X+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+X";
+	escribir " ";
+	Escribir "    X+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+X";
+	Escribir "    XX+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+X  SELECCIONE EL JUEGO QUE DESEE JUGAR X+X+X+XX+X+X+X+XX+X+X+X+XX+X+X+X+XX+X+XX+X+X";
+	Escribir " ";
+	Escribir " ";
+	Escribir "                                                            1: STAR WARS";
+	Escribir "                                                            2: TA TE TI";
+	Escribir "                                                            3: BUSCA MINAS";
+	Escribir "                                                            4: TRIVIA";
+	Escribir "                                                            5: CARRERA DE AUTOS";
+	Escribir " ";
+	Escribir " ";
+	
+	Escribir Sin Saltar "                                                            DIGITE SU OPCION: ";
 	Leer tecla1;
 	Segun tecla1 Hacer
 		1:
